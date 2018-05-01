@@ -8,10 +8,43 @@
 
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.45.0-beta.1/mapbox-gl.css' rel='stylesheet' />
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <script type="text/javascript" src='bundle.js' defer></script>
 </head>
 <body>
-  <div id='map'></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col col-lg-8">
+        <div id='map'></div>
+      </div>
+      <div class="col col-lg-4">
+        <div id="activity-box">
+          <h3>Hotels</h3>
+            <select name="hotels">
+              <option value="hyatt">Hyatt Hotels</option>
+              <option value="hilton">Waldorf Astoria by Hilton</option>
+              <option value="Marriott">Residence Inn by Marriott</option>
+            </select>
+          <h3>Restaurants</h3>
+            <select name="restaurants">
+              <option value="alinea">Alinea</option>
+              <option value="next">Next</option>
+              <option value="roister">Roister</option>
+            </select>
+          <h3>Things to do</h3>
+          <select name="activities">
+              <option value="Run">Run</option>
+              <option value="See">See</option>
+              <option value="Walk">Walk</option>
+            </select>
+        </div>
+        <div id="itinerary-box">
+          <h3>My Hotel</h3>
+          <h3>My Restaurants</h3>
+          <h3>My Activities</h3>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
